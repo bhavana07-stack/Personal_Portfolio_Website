@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MERUGU.BHAVANA | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== LOADER ========== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span class="loader-text">MB</span>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Bhavana<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <!-- Dark/Light Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HOME ========== -->
+  <section id="home" class="section home-section">
+    <div class="home-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="home-container">
+      <div class="home-text fade-in-left">
+        <p class="home-greeting">👋 Hello, I'm</p>
+        <h1 class="home-name">MERUGU<br /><span class="accent-name">BHAVANA</span></h1>
+        <div class="typing-wrapper">
+          <span class="typing-static">I am a </span>
+          <span class="typing-text" id="typingText"></span><span class="cursor">|</span>
+        </div>
+        <p class="home-bio">
+          Passionate engineering student interested in web development, programming,
+          and learning modern technologies. Dedicated to building creative and
+          user-friendly websites.
+        </p>
+        <div class="home-buttons">
+          <a href="#skills" class="btn btn-primary">
+            <i class="fas fa-code"></i> View Skills
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+        <div class="home-socials">
+          <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="home-image fade-in-right">
+        <div class="profile-ring">
+          <div class="profile-ring-inner">
+            <div class="profile-avatar">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+        </div>
+        <div class="floating-badge badge-1"><i class="fab fa-html5"></i> HTML</div>
+        <div class="floating-badge badge-2"><i class="fab fa-css3-alt"></i> CSS</div>
+        <div class="floating-badge badge-3"><i class="fab fa-js"></i> JS</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Get To Know Me</p>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card reveal">
+          <div class="about-card-icon"><i class="fas fa-user-circle"></i></div>
+          <h3>Who I Am</h3>
+          <p>I'm Bhavana, a 3rd-year B.Tech student at Malla Reddy Engineering College for Women. I am a dedicated learner passionate about technology, coding, and building impactful digital experiences.</p>
+        </div>
+        <div class="about-card glass-card reveal" style="animation-delay:0.15s">
+          <div class="about-card-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>My Goals</h3>
+          <p>To become a skilled full-stack web developer, contribute to meaningful tech projects, and continuously grow through internships, real-world challenges, and collaborations.</p>
+        </div>
+        <div class="about-card glass-card reveal" style="animation-delay:0.3s">
+          <div class="about-card-icon"><i class="fas fa-heart"></i></div>
+          <h3>My Interests</h3>
+          <p>I love coding, web design, creative problem-solving, and exploring modern technologies. Beyond tech, I enjoy reading, designing, and learning something new every day.</p>
+        </div>
+        <div class="about-card glass-card reveal" style="animation-delay:0.45s">
+          <div class="about-card-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Quick Facts</h3>
+          <ul class="facts-list">
+            <li><i class="fas fa-map-marker-alt"></i> Hyderabad, India</li>
+            <li><i class="fas fa-university"></i> MRECW</li>
+            <li><i class="fas fa-star"></i> CGPA: 7.78</li>
+            <li><i class="fas fa-laptop-code"></i> Web Dev Learner</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="section alt-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">My Journey</p>
+        <h2 class="section-title">Education <span class="accent">Timeline</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="timeline">
+
+        <!-- B.Tech -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="edu-header">
+              <div class="edu-icon"><i class="fas fa-university"></i></div>
+              <div>
+                <h3 class="edu-degree">B.Tech — Computer Science</h3>
+                <p class="edu-institution">Malla Reddy Engineering College for Women</p>
+              </div>
+            </div>
+            <div class="edu-details">
+              <span class="edu-badge year"><i class="fas fa-calendar-alt"></i> 3rd Year (2022–2026)</span>
+              <span class="edu-badge cgpa"><i class="fas fa-star"></i> CGPA: 7.78</span>
+              <span class="edu-badge status current">Current</span>
+            </div>
+            <div class="cgpa-bar">
+              <div class="cgpa-fill" data-width="77.8"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intermediate -->
+        <div class="timeline-item reveal" style="animation-delay:0.2s">
+          <div class="timeline-dot">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="edu-header">
+              <div class="edu-icon"><i class="fas fa-book-open"></i></div>
+              <div>
+                <h3 class="edu-degree">Intermediate — MPC</h3>
+                <p class="edu-institution">Sri Chaitanya College</p>
+              </div>
+            </div>
+            <div class="edu-details">
+              <span class="edu-badge year"><i class="fas fa-calendar-alt"></i> 2020–2022</span>
+              <span class="edu-badge cgpa"><i class="fas fa-star"></i> CGPA: 9.21</span>
+            </div>
+            <div class="cgpa-bar">
+              <div class="cgpa-fill" data-width="92.1"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- School -->
+        <div class="timeline-item reveal" style="animation-delay:0.4s">
+          <div class="timeline-dot">
+            <i class="fas fa-pencil-alt"></i>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="edu-header">
+              <div class="edu-icon"><i class="fas fa-school"></i></div>
+              <div>
+                <h3 class="edu-degree">SSC — 10th Standard</h3>
+                <p class="edu-institution">Sri Chaitanya School</p>
+              </div>
+            </div>
+            <div class="edu-details">
+              <span class="edu-badge year"><i class="fas fa-calendar-alt"></i> 2019–2020</span>
+              <span class="edu-badge cgpa"><i class="fas fa-star"></i> CGPA: 9.3</span>
+            </div>
+            <div class="cgpa-bar">
+              <div class="cgpa-fill" data-width="93"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What I Know</p>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+          <h4>HTML</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="85">
+              <div class="skill-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card reveal" style="animation-delay:0.1s">
+          <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+          <h4>CSS</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="80">
+              <div class="skill-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card reveal" style="animation-delay:0.2s">
+          <div class="skill-icon js"><i class="fab fa-js"></i></div>
+          <h4>JavaScript</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="70">
+              <div class="skill-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card reveal" style="animation-delay:0.3s">
+          <div class="skill-icon c"><i class="fas fa-copyright"></i></div>
+          <h4>C Programming</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="75">
+              <div class="skill-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card glass-card reveal" style="animation-delay:0.4s">
+          <div class="skill-icon java"><i class="fab fa-java"></i></div>
+          <h4>Java</h4>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="65">
+              <div class="skill-fill"></div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section alt-section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">My Work</p>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-globe"></i></div>
+            <div class="project-links">
+              <a href="#" class="proj-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="proj-btn" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <p class="project-desc">A modern, responsive portfolio website showcasing skills, education, and projects with smooth animations and glassmorphism design.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card reveal" style="animation-delay:0.15s">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-book"></i></div>
+            <div class="project-links">
+              <a href="#" class="proj-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="proj-btn" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Library Management System</h3>
+          <p class="project-desc">A comprehensive system to manage library operations including book issuing, returns, member management, and catalogue search functionality.</p>
+          <div class="project-tags">
+            <span class="tag">Java</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">JDBC</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Let's Talk</p>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <h3>Let's Connect!</h3>
+          <p>Feel free to reach out for collaborations, internship opportunities, or just a friendly chat about technology!</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <p class="ci-label">Email</p>
+                <p class="ci-value">bhavanamrecw07@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <p class="ci-label">Location</p>
+                <p class="ci-value">Hyderabad, Telangana, India</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-university"></i></div>
+              <div>
+                <p class="ci-label">College</p>
+                <p class="ci-value">MRECW, Hyderabad</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap glass-card reveal" style="animation-delay:0.2s">
+          <form id="contactForm">
+            <!-- FormSubmit hidden config fields -->
+            <input type="hidden" name="_subject" value="New message from your Portfolio!" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+
+            <div class="form-group">
+              <label for="name"><i class="fas fa-user"></i> Your Name</label>
+              <input type="text" id="name" name="name" placeholder="MERUGU BHAVANA" required />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+              <input type="email" id="email" name="email" placeholder="bhavana@example.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message"><i class="fas fa-comment-dots"></i> Your Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Hi Bhavana, I'd love to collaborate..." required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="sendBtn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>Bhavana<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>3rd Year Engineering Student passionate about web development and modern technologies.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-socials-section">
+          <h4>Connect With Me</h4>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with <span class="heart">❤️</span> by <strong>MERUGU.BHAVANA</strong></p>
+        <p class="footer-copy">&copy; 2024 All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCROLL TO TOP ========== -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ========== SUCCESS POPUP ========== -->
+  <div class="popup" id="successPopup">
+    <div class="popup-inner">
+      <div class="popup-icon success"><i class="fas fa-check-circle"></i></div>
+      <h3>Message Sent!</h3>
+      <p>Thank you for reaching out. Bhavana will get back to you soon!</p>
+      <button class="btn btn-primary" onclick="closePopup('successPopup')">Close</button>
+    </div>
+  </div>
+
+  <!-- ========== ERROR POPUP ========== -->
+  <div class="popup" id="errorPopup">
+    <div class="popup-inner">
+      <div class="popup-icon error"><i class="fas fa-times-circle"></i></div>
+      <h3>Oops!</h3>
+      <p>Something went wrong. Please try again or contact directly via email.</p>
+      <button class="btn btn-primary" onclick="closePopup('errorPopup')">Close</button>
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="popupOverlay" onclick="closeAllPopups()"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
